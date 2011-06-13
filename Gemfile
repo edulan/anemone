@@ -1,4 +1,4 @@
-# A sample Gemfile
 source "http://rubygems.org"
 
-# gem "rails"
+# Specify your gem's dependencies in anemone.gemspec
+gemspec

@@ -1,9 +1,4 @@
-begin
-  require 'mongo'
-rescue LoadError
-  puts "You need the mongo gem to use Anemone::Storage::MongoDB"
-  exit
-end
+require 'mongo'
 
 module Anemone
   module Storage

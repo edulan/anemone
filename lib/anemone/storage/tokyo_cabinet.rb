@@ -1,10 +1,4 @@
-begin
-  require 'tokyocabinet'
-rescue LoadError
-  puts "You need the tokyocabinet gem to use Anemone::Storage::TokyoCabinet"
-  exit
-end
-
+require 'tokyocabinet'
 require 'forwardable'
 
 module Anemone

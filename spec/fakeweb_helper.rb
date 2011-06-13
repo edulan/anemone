@@ -1,9 +1,4 @@
-begin
-  require 'fakeweb'
-rescue LoadError
-  warn "You need the 'fakeweb' gem installed to test Anemone"
-  exit
-end
+require 'fakeweb'
 
 FakeWeb.allow_net_connect = false
 

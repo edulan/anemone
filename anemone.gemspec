@@ -11,17 +11,23 @@ Gem::Specification.new do |s|
   s.summary = "Anemone web-spider framework"
 
   s.rubyforge_project = "anemone"
-  # Anemone files
+
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
-  # RDoc
-  #s.has_rdoc = true
-  #s.rdoc_options << '-m' << 'README.rdoc' << '-t' << 'Anemone'
-  #s.extra_rdoc_files = ["README.rdoc"]
-  # Gem dependencies
+
+  s.has_rdoc = true
+  s.rdoc_options << '-m' << 'README.rdoc' << '-t' << 'Anemone'
+  s.extra_rdoc_files = ["README.rdoc"]
+
   s.add_dependency "nokogiri", ">= 1.3.0"
   s.add_dependency "robots", ">= 0.7.2"
+  s.add_dependency "mongo"
+  s.add_dependency "bson_ext"
+  s.add_dependency "redis"
+  s.add_dependency "tokyocabinet"
+
   s.add_development_dependency "rspec"
+  s.add_development_dependency "fakeweb"
 end

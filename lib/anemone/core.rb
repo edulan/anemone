@@ -6,10 +6,9 @@ require 'anemone/exceptions'
 require 'anemone/page_store'
 require 'anemone/storage'
 require 'anemone/storage/base'
+require 'anemone/version'
 
 module Anemone
-
-  VERSION = '0.6.1';
 
   #
   # Convenience method to start a crawl
